@@ -32,20 +32,25 @@
 
   <!-- HERO -->
   <section class="hero">
-    <div class="container hero__inner">
-      <span class="hero__tag">Lokal webdesigner · Amager Strand</span>
-      <h1 class="hero__headline">Din næste hjemmeside,<br>lavet af én fra kvarteret</h1>
-      <p class="hero__sub">Jeg bygger hjemmesider til lokale butikker på Amager.<br>Du ringer til mig direkte. Ingen mellemled.</p>
-      <div class="hero__ctas">
-        <a href="#kontakt" class="btn btn--primary">Få et gratis tilbud</a>
-        <a href="#portfolio" class="btn btn--ghost">Se mit arbejde</a>
+    <div class="container hero__layout">
+      <div class="hero__text">
+        <span class="hero__tag">Lokal webdesigner · Amager Strand</span>
+        <h1 class="hero__headline">Din næste hjemmeside,<br>lavet af én fra kvarteret</h1>
+        <p class="hero__sub">Jeg bygger hjemmesider til lokale butikker på Amager.<br>Du ringer til mig direkte. Ingen mellemled.</p>
+        <div class="hero__ctas">
+          <a href="#kontakt" class="btn btn--primary">Få et gratis tilbud</a>
+          <a href="#portfolio" class="btn btn--ghost">Se mit arbejde</a>
+        </div>
+        <p class="hero__price">Fra 3.500 kr.</p>
       </div>
-      <p class="hero__price">Fra 3.500 kr.</p>
+      <div class="hero__visual">
+        <img src="holger.jpg" alt="Holger fra Klarskov Studio" class="hero__photo" />
+      </div>
     </div>
   </section>
 
   <!-- OM MIG -->
-  <section class="section section--light" id="om">
+  <section class="section" id="om">
     <div class="container about">
       <div class="about__photo">
         <img src="holger.jpg" alt="Holger fra Klarskov Studio" class="about__photo-img" />
@@ -67,7 +72,7 @@
   </section>
 
   <!-- SERVICES -->
-  <section class="section" id="services">
+  <section class="section section--light" id="services">
     <div class="container">
       <div class="section__header section__header--left">
         <span class="section__tag">Services</span>
@@ -99,6 +104,34 @@
     </div>
   </section>
 
+  <!-- PROCES -->
+  <section class="section" id="processen">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">Sådan fungerer det</span>
+        <h2>Sådan arbejder vi sammen</h2>
+        <p>Ingen kontrakter, ingen overraskelser. Tre trin fra kaffe til lancering.</p>
+      </div>
+      <div class="process__grid">
+        <div class="process__step">
+          <span class="process__num">01</span>
+          <h3>Vi mødes</h3>
+          <p>Kaffe på Amager. Du fortæller om din butik, jeg lytter. Ingen forpligtelse, ingen salgstale.</p>
+        </div>
+        <div class="process__step">
+          <span class="process__num">02</span>
+          <h3>Jeg bygger</h3>
+          <p>Jeg designer og bygger siden på 1–2 uger. Du ser fremskridt undervejs og kan kommentere.</p>
+        </div>
+        <div class="process__step">
+          <span class="process__num">03</span>
+          <h3>Vi lancerer</h3>
+          <p>Siden går online. Du betaler først nu. Ingen bindingsperiode, ingen skjulte gebyrer.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- PORTFOLIO -->
   <section class="section section--light" id="portfolio">
     <div class="container">
@@ -110,7 +143,7 @@
       <div class="portfolio__grid">
         <div class="portfolio-card">
           <div class="portfolio-card__img">
-            <img src="https://blomsterhandel.netlify.app/placeholder%201.jpeg" alt="Anemone De Caen blomsterbutik" class="portfolio-card__screenshot" loading="lazy" />
+            <img src="https://api.microlink.io/?url=https://blomsterhandel.netlify.app&screenshot=true&meta=false&embed=screenshot.url" alt="Anemone De Caen hjemmeside" class="portfolio-card__screenshot" loading="lazy" />
           </div>
           <div class="portfolio-card__body">
             <h3>Anemone De Caen</h3>
@@ -120,7 +153,7 @@
         </div>
         <div class="portfolio-card">
           <div class="portfolio-card__img">
-            <img src="https://www.anderslangballe.com/wp-content/uploads/2026/03/Portraet-farve-742x1024.jpg" alt="Anders Langballe portræt" class="portfolio-card__screenshot portfolio-card__screenshot--portrait" loading="lazy" />
+            <img src="https://api.microlink.io/?url=https://brilliant-maamoul-5d62bf.netlify.app&screenshot=true&meta=false&embed=screenshot.url" alt="Anders Langballe hjemmeside" class="portfolio-card__screenshot" loading="lazy" />
           </div>
           <div class="portfolio-card__body">
             <h3>Anders Langballe</h3>
@@ -133,7 +166,7 @@
   </section>
 
   <!-- PRISER -->
-  <section class="section" id="priser">
+  <section class="section section--warm" id="priser">
     <div class="container">
       <div class="section__header section__header--left">
         <span class="section__tag">Priser</span>
@@ -175,6 +208,27 @@
     </div>
   </section>
 
+  <!-- LOKATION -->
+  <section class="section" id="lokation">
+    <div class="container location__layout">
+      <div class="location__text">
+        <span class="section__tag">Lokalt forankret</span>
+        <h2>Jeg er her</h2>
+        <p>Jeg arbejder fra Amager Strand og mødes gerne på en café i dit nærområde. Amager Strand, Islands Brygge, Sundby, Dragør — alle steder jeg kender godt.</p>
+        <p>En samtale over kaffe koster ingenting. Skriv til mig, så finder vi et tidspunkt der passer dig.</p>
+        <a href="#kontakt" class="btn btn--primary" style="margin-top: 8px;">Lad os mødes</a>
+      </div>
+      <div class="location__map">
+        <iframe
+          src="https://www.openstreetmap.org/export/embed.html?bbox=12.56%2C55.63%2C12.70%2C55.73&layer=mapnik&marker=55.6696%2C12.6228"
+          loading="lazy"
+          title="Klarskov Studio på Amager Strand"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </section>
+
   <!-- KONTAKT -->
   <section class="section section--dark" id="kontakt">
     <div class="container">
@@ -184,45 +238,50 @@
         <p>Skriv hvad du har i tankerne. Jeg vender tilbage inden for 24 timer.</p>
       </div>
       <div class="contact__layout">
-        <form class="contact__form" id="contactForm" action="https://formspree.io/f/XXXXXXXX" method="POST">
-          <div class="form__group">
-            <label for="navn">Navn</label>
-            <input type="text" id="navn" name="navn" placeholder="Dit navn" required />
-          </div>
-          <div class="form__group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="din@email.dk" required />
-          </div>
-          <div class="form__group">
-            <label for="tlf">Telefon (valgfrit)</label>
-            <input type="tel" id="tlf" name="telefon" placeholder="+45 12 34 56 78" />
-          </div>
-          <div class="form__group">
-            <label for="besked">Hvad handler det om?</label>
-            <textarea id="besked" name="besked" rows="4" placeholder="Beskriv kort din virksomhed og hvad du søger hjælp til..." required></textarea>
-          </div>
-          <button type="submit" class="btn btn--primary btn--full">Send besked</button>
-          <p class="form__note">Eller skriv direkte på <a href="mailto:hkochklarskov@gmail.com">hkochklarskov@gmail.com</a></p>
-        </form>
-        <div class="contact__info">
-          <div class="contact__info-block">
-            <div>
-              <strong>Amager Strand, København</strong>
-              <p>Jeg betjener hele Amager. Amager Strand, Islands Brygge, Sundby, Dragør og omegn.</p>
+        <div class="contact__sidebar">
+          <img src="holger.jpg" alt="Holger fra Klarskov Studio" class="contact__photo" />
+          <div class="contact__info">
+            <div class="contact__info-block">
+              <div>
+                <strong>Amager Strand, København</strong>
+                <p>Jeg betjener hele Amager. Amager Strand, Islands Brygge, Sundby, Dragør og omegn.</p>
+              </div>
+            </div>
+            <div class="contact__info-block">
+              <div>
+                <strong>Svar inden 24 timer</strong>
+                <p>Jeg er ikke et bureau med sagsbehandlingstid. Du får svar hurtigt.</p>
+              </div>
+            </div>
+            <div class="contact__info-block">
+              <div>
+                <strong>Vi mødes gerne lokalt</strong>
+                <p>Foretrækker du et møde, tager jeg gerne en kop kaffe og hører om din virksomhed.</p>
+              </div>
             </div>
           </div>
-          <div class="contact__info-block">
-            <div>
-              <strong>Svar inden 24 timer</strong>
-              <p>Jeg er ikke et bureau med sagsbehandlingstid. Du får svar hurtigt.</p>
+        </div>
+        <div class="contact__form-wrap">
+          <form class="contact__form" id="contactForm" action="https://formspree.io/f/XXXXXXXX" method="POST">
+            <div class="form__group">
+              <label for="navn">Navn</label>
+              <input type="text" id="navn" name="navn" placeholder="Dit navn" required />
             </div>
-          </div>
-          <div class="contact__info-block">
-            <div>
-              <strong>Vi mødes gerne lokalt</strong>
-              <p>Foretrækker du et møde, tager jeg gerne en kop kaffe og hører om din virksomhed.</p>
+            <div class="form__group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="din@email.dk" required />
             </div>
-          </div>
+            <div class="form__group">
+              <label for="tlf">Telefon (valgfrit)</label>
+              <input type="tel" id="tlf" name="telefon" placeholder="+45 12 34 56 78" />
+            </div>
+            <div class="form__group">
+              <label for="besked">Hvad handler det om?</label>
+              <textarea id="besked" name="besked" rows="5" placeholder="Beskriv kort din virksomhed og hvad du søger hjælp til..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">Send besked</button>
+            <p class="form__note">Eller skriv direkte på <a href="mailto:hkochklarskov@gmail.com">hkochklarskov@gmail.com</a></p>
+          </form>
         </div>
       </div>
     </div>

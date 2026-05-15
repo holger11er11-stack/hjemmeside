@@ -21,7 +21,7 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.1 });
 
-document.querySelectorAll('.services__item, .pricelist__item, .portfolio-card, .about__text, .contact__info-block').forEach(el => {
+document.querySelectorAll('.services__item, .pricelist__item, .portfolio-card, .about__text, .contact__info-block, .process__step, .location__layout').forEach(el => {
   el.classList.add('fade-in');
   observer.observe(el);
 });
