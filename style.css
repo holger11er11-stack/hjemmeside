@@ -263,6 +263,13 @@ h3 {
   flex-wrap: wrap;
 }
 
+.hero__price {
+  margin-top: 16px;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  font-weight: 500;
+}
+
 /* ===========================
    ABOUT
 =========================== */
@@ -409,6 +416,13 @@ h3 {
   gap: 24px;
   max-width: 800px;
   margin: 0 auto;
+}
+
+@media (min-width: 901px) {
+  .portfolio__grid--three {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: var(--max-width);
+  }
 }
 
 .portfolio-card {
