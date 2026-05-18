@@ -250,7 +250,7 @@ h3 {
 }
 
 .hero__headline {
-  font-size: clamp(2.6rem, 6.5vw, 4.2rem);
+  font-size: clamp(2rem, 6.5vw, 4.2rem);
   font-weight: 700;
   line-height: 0.95;
   letter-spacing: -0.04em;
@@ -900,6 +900,11 @@ h3 {
 
 @media (max-width: 640px) {
   :root { --section-pad: 52px; }
+
+  h2 { line-height: 1.1; }
+
+  .proof-strip__label { display: none; }
+  .proof-strip__inner { justify-content: space-between; gap: 16px; }
 
   .navbar__links {
     display: none;
