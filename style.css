@@ -291,6 +291,73 @@ h3 {
 }
 
 /* ===========================
+   SOCIAL PROOF STRIP
+=========================== */
+.proof-strip {
+  background: var(--color-accent);
+  padding: 18px 0;
+}
+
+.proof-strip__inner {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.proof-strip__label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.65);
+  white-space: nowrap;
+}
+
+.proof-strip__client {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex: 1;
+}
+
+.proof-strip__avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  border: 2px solid rgba(255,255,255,0.4);
+}
+
+.proof-strip__client strong {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.proof-strip__client span {
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.72);
+}
+
+.proof-strip__link {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  white-space: nowrap;
+  border-bottom: 1px solid rgba(255,255,255,0.4);
+  padding-bottom: 1px;
+  transition: border-color 0.2s;
+}
+
+.proof-strip__link:hover {
+  border-color: #fff;
+}
+
+/* ===========================
    ABOUT
 =========================== */
 .about {
@@ -334,6 +401,7 @@ h3 {
 
 .about__bullets {
   margin-top: 24px;
+  margin-bottom: 28px;
   display: flex;
   flex-direction: column;
   gap: 10px;
