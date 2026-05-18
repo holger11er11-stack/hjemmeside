@@ -1,6 +1,13 @@
-// Altid start fra toppen ved reload
+// Altid start fra toppen — virker på iOS Safari
 if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
-window.scrollTo(0, 0);
+
+window.addEventListener('pageshow', function () {
+  // Fjern evt. hash fra URL så iOS ikke scroller til anker ved reload
+  if (window.location.hash) {
+    history.replaceState(null, '', window.location.pathname);
+  }
+  window.scrollTo(0, 0);
+});
 
 // Mobil menu
 const burger = document.getElementById('burgerBtn');
