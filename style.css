@@ -916,7 +916,7 @@ h3 {
     padding: 24px 20px;
     gap: 20px;
     border-top: 1px solid var(--color-border);
-    z-index: 99;
+    z-index: 1000;
   }
 
   .navbar__links.open { display: flex; }
