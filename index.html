@@ -9,7 +9,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Caveat:wght@600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=3" />
+  <link rel="icon" href="data:," />
+  <link rel="stylesheet" href="style.css?v=4" />
 </head>
 <body>
 
@@ -272,15 +273,15 @@
           <form class="contact__form" id="contactForm" action="https://formspree.io/f/XXXXXXXX" method="POST">
             <div class="form__group">
               <label for="navn">Navn</label>
-              <input type="text" id="navn" name="navn" placeholder="Dit navn" required />
+              <input type="text" id="navn" name="navn" placeholder="Dit navn" autocomplete="name" required />
             </div>
             <div class="form__group">
               <label for="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="din@email.dk" required />
+              <input type="email" id="email" name="email" placeholder="din@email.dk" autocomplete="email" required />
             </div>
             <div class="form__group">
               <label for="tlf">Telefon (valgfrit)</label>
-              <input type="tel" id="tlf" name="telefon" placeholder="+45 12 34 56 78" />
+              <input type="tel" id="tlf" name="telefon" placeholder="+45 12 34 56 78" autocomplete="tel" />
             </div>
             <div class="form__group">
               <label for="besked">Hvad handler det om?</label>
