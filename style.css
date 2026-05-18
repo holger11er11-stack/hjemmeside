@@ -584,6 +584,12 @@ h3 {
   font-style: normal;
 }
 
+.portfolio__quote-aside {
+  font-style: normal;
+  font-weight: 500;
+  color: var(--color-text);
+}
+
 /* ===========================
    PRICING
 =========================== */
