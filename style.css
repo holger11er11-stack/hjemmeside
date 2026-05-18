@@ -330,6 +330,19 @@ h3 {
   border: 2px solid rgba(255,255,255,0.4);
 }
 
+.proof-strip__badge {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.7);
+  background: rgba(255,255,255,0.15);
+  padding: 2px 8px;
+  border-radius: 99px;
+  margin-bottom: 3px;
+}
+
 .proof-strip__client strong {
   display: block;
   font-size: 0.95rem;
@@ -361,21 +374,7 @@ h3 {
    ABOUT
 =========================== */
 .about {
-  display: grid;
-  grid-template-columns: 200px 1fr;
-  gap: 64px;
-  align-items: start;
-}
-
-.about__photo { position: sticky; top: 88px; }
-
-.about__photo-img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  object-fit: cover;
-  object-position: center top;
-  box-shadow: var(--shadow-md);
+  max-width: 720px;
 }
 
 .about__text .section__tag { display: inline-block; margin-bottom: 12px; }
@@ -884,17 +883,6 @@ h3 {
     margin: 0 auto;
   }
 
-  .about {
-    grid-template-columns: 1fr;
-    gap: 32px;
-  }
-
-  .about__photo {
-    position: static;
-    display: flex;
-    justify-content: center;
-  }
-
   .process__grid {
     grid-template-columns: 1fr;
     gap: 0;
@@ -936,8 +924,12 @@ h3 {
 
   h2 { line-height: 1.1; }
 
-  .proof-strip__label { display: none; }
   .proof-strip__inner { justify-content: space-between; gap: 16px; }
+
+  /* Safari: backdrop-filter skaber stacking context der ødelægger fixed menu */
+  .navbar { backdrop-filter: none; background: #fff; }
+
+  body.menu-open { overflow: hidden; position: fixed; width: 100%; }
 
   .navbar__links {
     display: none;
@@ -950,6 +942,7 @@ h3 {
     gap: 20px;
     border-top: 1px solid var(--color-border);
     z-index: 1000;
+    overflow-y: auto;
   }
 
   .navbar__links.open { display: flex; }

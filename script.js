@@ -3,12 +3,16 @@ const burger = document.getElementById('burgerBtn');
 const navLinks = document.getElementById('navLinks');
 
 burger.addEventListener('click', () => {
-  navLinks.classList.toggle('open');
+  const isOpen = navLinks.classList.toggle('open');
+  document.body.classList.toggle('menu-open', isOpen);
 });
 
 // Luk menu når man klikker et link
 navLinks.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => navLinks.classList.remove('open'));
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('open');
+    document.body.classList.remove('menu-open');
+  });
 });
 
 // Scroll-ind animation
