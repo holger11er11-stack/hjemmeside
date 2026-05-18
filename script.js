@@ -1,18 +1,35 @@
+// Altid start fra toppen ved reload
+if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+window.scrollTo(0, 0);
+
 // Mobil menu
 const burger = document.getElementById('burgerBtn');
 const navLinks = document.getElementById('navLinks');
+let savedScroll = 0;
+
+function openMenu() {
+  savedScroll = window.scrollY;
+  document.body.style.position = 'fixed';
+  document.body.style.top = `-${savedScroll}px`;
+  document.body.style.width = '100%';
+  navLinks.classList.add('open');
+}
+
+function closeMenu() {
+  document.body.style.position = '';
+  document.body.style.top = '';
+  document.body.style.width = '';
+  window.scrollTo(0, savedScroll);
+  navLinks.classList.remove('open');
+}
 
 burger.addEventListener('click', () => {
-  const isOpen = navLinks.classList.toggle('open');
-  document.body.classList.toggle('menu-open', isOpen);
+  navLinks.classList.contains('open') ? closeMenu() : openMenu();
 });
 
 // Luk menu når man klikker et link
 navLinks.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => {
-    navLinks.classList.remove('open');
-    document.body.classList.remove('menu-open');
-  });
+  link.addEventListener('click', closeMenu);
 });
 
 // Scroll-ind animation
