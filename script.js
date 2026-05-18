@@ -26,16 +26,6 @@ document.querySelectorAll('.services__item, .pricelist__item, .portfolio__featur
   observer.observe(el);
 });
 
-// Kontaktformular — vis tak-besked
-const form = document.getElementById('contactForm');
-if (form) {
-  form.addEventListener('submit', async (e) => {
-    const action = form.getAttribute('action');
-    if (action.includes('XXXXXXXX')) {
-      // Formspree ikke sat op endnu — vis vejledning
-      e.preventDefault();
-      alert('Formularen er ikke konfigureret endnu.\n\nGå til formspree.io, opret en konto, og erstat XXXXXXXX i index.html med dit form-id.');
-    }
-    // Hvis action er korrekt konfigureret, sendes formularen normalt
-  });
-}
+// Kontaktformular — Formspree Ajax
+window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+formspree('initForm', { formElement: '#contactForm', formId: 'xvzygpry' });
